@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*
+    HTML5 and CSS3
+
+    Final Project 1 of 3
+    About Skylar Hight
+
+    Starting Date: 04/30/2044
+*/
+#hobbies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+
+.listItem {
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.listItem audio {
+  justify-content: center;
+  align-self: center;
+}
+
+.specialListItem {
+  grid-column: 1 / span 3;
+  border: 3px solid black;
+  padding: 10px;
+  display: inline-block;
+}
+
+.specialListItem a:visited {
+  text-decoration: none;
+}
+
+.specialListItem a:hover {
+  font-size: 110%;
+  background-color: lightskyblue;
+}

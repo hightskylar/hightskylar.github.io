@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            HTML5 and CSS3
+            Final Project 1 of 3
+
+            About Skylar Hight
+
+            Starting Date: 04/29/2024
+        -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width", initial-scale="1" />
+        <link href="Me_styles2.css" rel="stylesheet" />
+        <link href="Me_layout2.css" rel="stylesheet">  
+        <script src="Me_popups.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="Image02.png" alt="all about skylar hight" />
+            <nav class="Links">
+                <ul>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="QA.html">Common Questions</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Past and Current Programing Projects</h1>
+        <p>Be sure you have pop ups enabled to see the following content.</p>
+        <button id="C" onclick="openPopup('popup1')">C# Language</button>
+        <button id="Python" onclick="openPopup('popup2')">Python Language</button>
+        <button id="SQL" onclick="openPopup('popup3')">SQL Language</button>
+
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup1">
+            <h2>C# Projects</h2>
+            <p>These projects are from my first semester of learning C#</p>
+            <ul>
+                <li>Library Management System</li>
+                <li>Text Processing System</li>
+            </ul>
+            <video controls>
+                <source src="C_video.mp4" type="video/mp4" />
+                <p>This video is of my Library Management System I made for class.</p>
+                <p>The owner was only able to record as mp4</p>
+                <p><em>To play this video clip, your browser needs to support HTML5</em></p>
+            </video>
+
+            <button onclick="closePopup('popup1')">Close</button>
+        </div>
+        <div class="popup" id="popup2">
+            <h2>Python Projects</h2>
+            <p>These projects are from my only semester of learning Python.</p>
+            <ul>
+                <li>Math Tutor</li>
+                <li>Change Calculator</li>
+            </ul>
+            <p>Owner was unable to get the video for the Math Tutor program.</p>
+
+            <button onclick="closePopup('popup2')">Close</button>
+        </div>
+        <div class="popup" id="popup3">
+            <h2>SQL Project</h2>
+            <p>This project is of when I was making a database tables for class</p>
+            <video controls>
+                <source src="SQL_video.mp4" type="video/mp4" />
+                <p>The owner was only able to record as mp4</p>
+                <p><em>To play this video clip, your broweser needs to support HTML5</em></p>
+            </video>
+
+            <button onclick="closePopup('popup3')">Close</button>
+        </div>
+    </body>
+</html>
