@@ -58,8 +58,8 @@ nav a:active, nav a:hover {
     box-sizing: border-box;
     position: absolute;
     bottom: 40px;
-    left: 865px;
-    width: 50%;
+    left: 860px;
+    width: 55%;
     display: flex;
     flex-flow: row nowrap;
 }
