@@ -22,7 +22,7 @@ div.overlay {
 div.popup {
     display: none;
     position: fixed;
-    padding: 20px;
+    padding: 40px;
     border-radius: 5px;
     transform: translate(-10%, -90%);
     background-color: ivory;
